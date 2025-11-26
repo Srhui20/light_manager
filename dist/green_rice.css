@@ -1,0 +1,181 @@
+.main_container{
+  width: 100vw;
+  height: 100vh;
+}
+
+.menu_bar {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 300px;
+  height: 45px;
+  background-color: var(--navBGC);
+  color: var(--baseFontColor);
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  font-size: var(--baseFontSize);
+}
+.menu_bar .menu_bar_item {
+  width: 40px;
+  text-align: center;
+  line-height: 45px;
+  cursor: pointer;
+}
+.menu_bar .menu_bar_item:hover {
+  background-color: var(--checkedBGC);
+}
+
+.draw_light_area {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 120px;
+  height: 300px;
+  color: var(--baseFontColor);
+  background-color: var(--navBGC);
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  font-size: var(--baseFontSize);
+  
+}
+.light_area_list {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:space-between;
+  padding: 20px 3px;
+ 
+} 
+.light_item {
+  width: 50%;
+  height: 80px;
+  border-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+ 
+}
+.light_item img {
+  width: 25px;
+  height: 25px;
+  margin-top: 20px;
+}
+.light_item:hover {
+  background-color: var(--navHoverBGC);
+}
+
+.wrap {
+  position: absolute;
+  width: 1280px;
+  height: 717px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+}
+.canvasStyle {
+  position: absolute;
+  border: 1px solid #000;
+  z-index: 1;
+}
+.canvas_container {
+  position: absolute;
+  width: 1280px;
+  height: 717px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.main_canvas{
+  border: 1px solid #000; 
+}
+/* 弹框 */
+.control_widgets {
+  display: none;
+  position: absolute;
+  /* left: 100px;
+  bottom: 50px; */
+  width: 300px;
+  /* min-height: 300px; */
+  background-color: var(--navBGC);
+  color: var(--baseFontColor);
+  font-size: 14px;
+  padding-bottom: 10px;
+}
+.control_widgets .CommandHeaderRow{
+  background-color: var(--navHoverBGC);
+  padding: 10px 30px;
+}
+.control_widgets .CommandDialog{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  padding: 10px;
+}
+.control_widgets  .CommandInputRow{
+  display: flex;
+  margin-top: 10px;
+}
+.control_widgets  .CommandInputRow .CommandInputLabel{
+  width: 80px;
+  padding: 0 10px;
+}
+.control_widgets  .CommandInputRow .CommandInputsGroup{
+  flex: 1;
+  outline: none;
+}
+.control_widgets  .CommandInputRow .CommandInputsGroup input{
+  width: 100%;
+  outline: none;
+}
+
+
+.control_widgets .CommandFoodRow{
+  margin-top: 20px;
+  text-align: center;
+}
+
+
+.control_widgets .CommandFoodRow button{
+  width: 100px;
+  height: 30px;
+  background-color: rgba(0,0,0,0);
+  border-radius: 10px;
+  box-shadow: none;
+  cursor: pointer;
+  margin: 0 10px;
+}
+.control_widgets .CommandFoodRow button:hover{
+  background-color: var(--navHoverBGC);
+}
+
+.control_widgets .CommandFoodRow .CommandBtnOk{
+  border: 1px solid var(--checkedBGC);
+  color: var(--checkedBGC);
+}
+.control_widgets .CommandFoodRow .CommandBtnCancel{
+  border: 1px solid var(--cancelColor);
+  color: var(--cancelColor);
+}
+
+.div_img_container{
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+  width: 50px;
+  height: 50px;
+}
+
+.div_img_container .widget_img{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}

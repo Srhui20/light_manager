@@ -1,0 +1,29 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+:root{
+  --baseFontSize: 12px;
+  --baseFontColor: #fff;
+  --baseBGC: rgb(54,54,54);
+  --navBGC: rgb(43,43,43);
+  --navHoverBGC: rgb(51, 51, 51);
+  --checkedBGC: rgb(20,127,250);
+  --cancelColor:rgb(255, 105, 105);
+}
+
+body {
+  margin: 0;
+  background-color: var(--baseBGC);
+  font-size: var(--baseFontSize);
+}
+
+#canvas_bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -10;
+}

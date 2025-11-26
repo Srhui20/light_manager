@@ -1,0 +1,91 @@
+.main_container {
+}
+
+.menu_bar {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 300px;
+    height: 45px;
+    background-color: var(--navBGC);
+    color: var(--baseFontColor);
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    font-size: var(--baseFontSize);
+}
+.menu_bar .menu_bar_item {
+    width: 40px;
+    text-align: center;
+    line-height: 45px;
+    cursor: pointer;
+}
+.menu_bar .menu_bar_item:hover {
+    background-color: var(--checkedBGC);
+}
+
+.draw_light_area {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 120px;
+    height: 300px;
+    color: var(--baseFontColor);
+    background-color: var(--navBGC);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    font-size: var(--baseFontSize);
+}
+.light_area_list {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 3px;
+}
+.light_item {
+    width: 50%;
+    height: 80px;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+.light_item img {
+    width: 25px;
+    height: 25px;
+    margin-top: 20px;
+}
+.light_item:hover {
+    background-color: var(--navHoverBGC);
+}
+
+.wrap {
+    position: absolute;
+    width: 1280px;
+    height: 717px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.canvasStyle {
+    position: absolute;
+    border: 1px solid #000;
+    z-index: 1;
+}
+.canvas_container {
+    position: absolute;
+    width: 1280px;
+    height: 717px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.main_canvas {
+    border: 1px solid #000;
+}
